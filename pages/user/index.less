@@ -1,0 +1,126 @@
+page {
+  background: #ECEBE8;
+}
+// 头像部分
+.user-img-wrap {
+  width: 750rpx;
+  height: 45vh;
+  background: #FB5350;
+  overflow: hidden;
+  position: relative;
+  .go-login {
+    color: #fff;
+    font-size: 50rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3rpx solid green;
+    padding: 15rpx 40rpx;
+    border-radius: 30rpx;
+  }
+  .login-success {
+    .user-bg {
+      width: 750rpx;
+      height: 46vh;
+      filter: blur(10rpx);
+    }
+    .user-info {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      .user-icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user-name {
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// 内容部分
+.user-content {
+  position: relative;
+  .user-main {
+    color: #666;
+    font-size: 14px;
+    width: 90%;
+    position: absolute;
+    top: -50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 100rpx;
+  }
+  // 足迹
+  .history-wrap {
+    padding: 15rpx 0;
+    background: #fff;
+    display: flex;
+    .history-item {
+      flex: 1;
+      text-align: center;
+      .num {
+        color: #FB5350;
+      }
+      .msg {
+        font-size: 14px;
+      }
+    }
+  }
+  // 订单
+  .order-wrap {
+    margin-top: 25rpx;
+    background: #fff;
+    .order-title {
+      padding: 15rpx 20rpx;
+      border-bottom: 1px solid #ccc;
+    }
+    .order-content {
+      display: flex;
+      text-align: center;
+      padding: 15rpx 0;
+     .order-item {
+       flex: 1;
+       .iconfont {
+        color: #F9544E;
+        font-size: 40rpx;
+       }
+       .rder_name {
+
+       }
+     } 
+    }
+  }
+  // 收货地址
+  .address-wrap {
+    margin-top: 25rpx;
+    padding: 20rpx 20rpx;
+    background: #fff;
+  }
+  // app相关信息
+  .app-msg-wrap {
+    margin-top: 25rpx;
+    background: #fff;
+    .isdispay {
+      display: flex;
+      justify-content: space-between;
+      padding: 20rpx 20rpx;
+      border-bottom: 1px solid #ccc;
+    }
+    .app-msg-item {
+      padding: 20rpx 20rpx;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  // 把应用推荐给其他人
+  .share-wrap {
+    margin-top: 25rpx;
+    background: #fff;
+    padding: 20rpx 20rpx;
+  }
+}

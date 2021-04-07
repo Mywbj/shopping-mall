@@ -1,0 +1,26 @@
+<view class="search">
+  <!-- 搜索 -->
+  <view class="search-box">
+    <input type="text" 
+    data-model="searchVal" 
+    bindinput="putSearchVal" 
+    bindconfirm="sendMsgTap"
+    confirm-type='send'
+    value="{{searchVal}}" 
+    class="searchDom"
+    placeholder="请输入商品名称"/>
+    <text bindtap="navHome">取消</text>
+  </view>
+  <!-- 搜索内容 -->
+  <view class="search-wrap">
+    <view class="search-content">
+    <navigator 
+    wx:for="{{goodsList}}" 
+    wx:key="goods_id" 
+    url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+    class="search-goods-item" >
+      {{item.goods_name}}
+    </navigator>
+    </view>
+  </view>
+</view>

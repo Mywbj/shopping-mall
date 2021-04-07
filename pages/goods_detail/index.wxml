@@ -1,0 +1,52 @@
+<view class="goods_detail_swiper">
+  <swiper indicator-dots autoplay circular>
+    <swiper-item wx:for="{{goodsMessage.pics}}" 
+    wx:key="pics_id"
+    bindtap = "ClickSwiprImg"
+    data-current="{{item.pics_mid}}">
+    <!-- 记得小程序 data-名称，是用来传递参数过去的 bindtap就是事件-->
+      <image mode="widthFix" src="{{item.pics_mid}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 价格名称 -->
+<view class="goods_context">
+  <!-- 价格 -->
+  <view class="goods_price"> ￥{{goodsMessage.goods_price}}</view>
+  <!-- 标题名称 -->
+  <view class="goods_title_row">
+    <view class="goods_name">{{goodsMessage.goods_name}}</view>
+    <view class="goods_collect">
+      <text class="iconfont icon-shoucang shoucicon"></text>
+      <view class="collect_text">收藏</view>
+    </view>
+  </view>
+</view>
+
+<!-- 图文-富文本 -->
+<view class="goods_nodes">
+  <view class="node_name">图文详情</view>
+  <rich-text nodes="{{goodsMessage.goods_introduce}}"></rich-text>
+</view>
+
+<!-- 详情页自定义tab -->
+<!-- tab栏是通用的所以我封装了起来，使用插槽来插值 -->
+<detailsTabs>
+  <view slot="left_1">
+    <image mode="widthFix" src="../../icons/kf.png"></image>
+    <view>联系客服</view>
+  </view>
+  <view slot="left_2">
+    <image mode="widthFix" src="../../icons/fx.png"></image>
+    <view>分享</view>
+  </view>
+  <!-- navigator标签 跳转不了tab页面，所以要加open-type="switchTab" 属性，这样子就可以解决问题了 -->
+  <navigator slot="left_3" open-type="switchTab" url="/pages/cart/index">
+    <image mode="widthFix" src="../../icons/gwc.png"></image>
+    <view>购物车</view>
+  </navigator>
+  <view slot="right_1">
+    <view bindtap="addTtoCart">加入购物车</view>
+    <view>立即购买</view>
+  </view>
+</detailsTabs>

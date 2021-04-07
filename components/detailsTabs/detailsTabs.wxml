@@ -1,0 +1,32 @@
+<view class="detail_Tbas">
+<!-- 
+  左边
+  使用方式：
+  <view slot="left_1">
+    <image mode="widthFix" src="图片路径"></image>
+    <view>联系客服</view>
+  </view>
+ -->
+  <view class="left_detail_tbas">
+    <view class="item_view">
+      <slot name="left_1"></slot>
+    </view>
+    <view class="item_view">
+      <slot name="left_2"></slot>
+    </view>
+    <view class="item_view">
+      <slot name="left_3"></slot>
+    </view>
+  </view>
+  <!-- 
+    右边 => 加入购物车和立即购买
+    使用方式：
+    <view slot="right_1">
+      <view>加入购物车</view>
+      <view>立即购买</view>
+    </view>
+   -->
+  <view class="right_detail_tbas">
+    <slot name="right_1"></slot>
+  </view>
+</view>

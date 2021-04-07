@@ -1,0 +1,14 @@
+/* components/tabs/Tabs.wxss */
+.tab_bar {
+  display: flex;
+  text-align: center;
+}
+.tab_bar>view {
+  flex: 1;
+  padding: 15rpx 0;
+  font-size: 30rpx;
+}
+.activeView {
+  color: red;
+  border-bottom: 5rpx solid red;
+}

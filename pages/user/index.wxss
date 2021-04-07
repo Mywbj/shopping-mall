@@ -1,0 +1,113 @@
+page {
+  background: #ECEBE8;
+}
+.user-img-wrap {
+  width: 750rpx;
+  height: 45vh;
+  background: #FB5350;
+  overflow: hidden;
+  position: relative;
+}
+.user-img-wrap .go-login {
+  color: #fff;
+  font-size: 50rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3rpx solid green;
+  padding: 15rpx 40rpx;
+  border-radius: 30rpx;
+}
+.user-img-wrap .login-success .user-bg {
+  width: 750rpx;
+  height: 46vh;
+  filter: blur(10rpx);
+}
+.user-img-wrap .login-success .user-info {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-img-wrap .login-success .user-info .user-icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user-img-wrap .login-success .user-info .user-name {
+  text-align: center;
+  color: #fff;
+}
+.user-content {
+  position: relative;
+}
+.user-content .user-main {
+  color: #666;
+  font-size: 14px;
+  width: 90%;
+  position: absolute;
+  top: -50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 100rpx;
+}
+.user-content .history-wrap {
+  padding: 15rpx 0;
+  background: #fff;
+  display: flex;
+}
+.user-content .history-wrap .history-item {
+  flex: 1;
+  text-align: center;
+}
+.user-content .history-wrap .history-item .num {
+  color: #FB5350;
+}
+.user-content .history-wrap .history-item .msg {
+  font-size: 14px;
+}
+.user-content .order-wrap {
+  margin-top: 25rpx;
+  background: #fff;
+}
+.user-content .order-wrap .order-title {
+  padding: 15rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user-content .order-wrap .order-content {
+  display: flex;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.user-content .order-wrap .order-content .order-item {
+  flex: 1;
+}
+.user-content .order-wrap .order-content .order-item .iconfont {
+  color: #F9544E;
+  font-size: 40rpx;
+}
+.user-content .address-wrap {
+  margin-top: 25rpx;
+  padding: 20rpx 20rpx;
+  background: #fff;
+}
+.user-content .app-msg-wrap {
+  margin-top: 25rpx;
+  background: #fff;
+}
+.user-content .app-msg-wrap .isdispay {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user-content .app-msg-wrap .app-msg-item {
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user-content .share-wrap {
+  margin-top: 25rpx;
+  background: #fff;
+  padding: 20rpx 20rpx;
+}

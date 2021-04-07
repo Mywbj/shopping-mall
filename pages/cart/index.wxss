@@ -1,0 +1,140 @@
+
+.address_btn {
+  padding: 20rpx;
+}
+.address_btn>button {
+  width: 60%;
+}
+.revice_address_row {
+  font-size: 26rpx;
+  display: flex;
+  padding: 20rpx;
+}
+.address_row_left {
+  flex: 5;
+}
+.address_row_right {
+  flex: 3;
+  text-align: right;
+}
+
+.cart_content {
+}
+.cart_title {
+  padding: 20rpx;
+  font-size: 34rpx;
+  border-top: 1rpx solid #FB5350;
+  border-bottom: 1rpx solid #FB5350;
+}
+.cart_main {
+  padding: 0 20rpx;
+  padding-left: 0;
+}
+.cart_item {
+  display: flex;
+  padding: 15rpx 0;
+  border-bottom: 1rpx solid #E6E2E6;
+}
+.cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_img_wrap image {
+  width: 80%;
+}
+.cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20rpx;
+}
+.goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.goods_price {
+  font-size: 36rpx;
+  color: #FB5350;
+}
+.goods_name {
+  color: #666;
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.cart_num_tool {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50rpx;
+}
+.goods_num {
+  padding: 0 15rpx;
+}
+.num_edit {
+  width: 50rpx;
+  height: 50rpx;
+  border: 1rpx solid #666;
+  text-align: center;
+}
+/* 底部栏 */
+.footer_tool {
+  height: 85rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1rpx solid #F1EDF1;
+}
+.all_chk_wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+  flex: 2;
+  font-size: 30rpx;
+}
+.total_price_wrap {
+  flex: 4;
+  text-align: right;
+  padding: 0 10rpx;
+}
+.total_price_wrap>view {
+  font-size: 26rpx;
+}
+.total_price_text {
+  color: #FC534F;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.order_pay_wrap {
+  flex: 2;
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  background: #FA5450;
+  line-height: 85rpx;
+}
+.koCart {
+  width: 80%;
+  margin-left: 68rpx;
+  margin-top: 80rpx;
+}
+.koText {
+  font-size: 58rpx;
+  color: #ccc;
+  opacity: .5;
+  text-align: center;
+  margin-top: 40rpx;
+}

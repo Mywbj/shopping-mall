@@ -1,0 +1,56 @@
+/* pages/goods_detail/index.wxss */
+page {
+  margin-bottom: 90rpx;
+}
+.goods_detail_swiper swiper {
+  height: 65vw;
+}
+.goods_detail_swiper swiper swiper-item {
+  display: flex;
+  justify-content: center;
+}
+.goods_detail_swiper swiper image {
+  width: 60%;
+}
+.goods_context {
+  padding: 8rpx;
+}
+.goods_price {
+  color: red;
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-left: 8rpx;
+}
+.goods_title_row {
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+.goods_name {
+  flex: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding-right: 11rpx;
+}
+.shoucicon {
+  font-size: 35rpx;
+}
+.goods_collect {
+  flex: 1;
+  text-align: center;
+  border-left: 2rpx solid #333;
+}
+
+.node_name {
+  border-top: 10rpx solid #EDEEEC;
+  border-bottom: 10rpx solid #EDEEEC;
+}
+.node_name {
+  color: red;
+  font-size: 33rpx;
+  font-weight: 700;
+  padding: 20rpx;
+}

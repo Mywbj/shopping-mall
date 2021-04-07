@@ -1,0 +1,7 @@
+<!-- 导航 -->
+<Tabs tabs="{{tabs}}" bindtabsItmeActive="tabsItmeActive">
+  <block wx:if="{{tabs[0].isActive}}">0</block>
+  <block wx:if="{{tabs[1].isActive}}">1</block>
+  <block wx:if="{{tabs[2].isActive}}">2</block>
+  <block wx:if="{{tabs[3].isActive}}">3</block>
+</Tabs>

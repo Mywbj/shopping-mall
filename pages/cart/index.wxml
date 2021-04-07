@@ -1,0 +1,74 @@
+<!-- 收货地址 -->
+<view class="obtainAddress">
+<!-- 如果没有数据就显示这块 -->
+  <view class="address_btn" wx:if="{{!address.userName}}">
+    <button bindtap="obtainClick" type="primary" plain>获取收货地址</button>
+  </view>
+  <!-- 如果有数据就显示这块 -->
+  <view wx:else class="revice_address_row">
+    <view class="address_row_left">
+      <view>收货人：{{address.userName}}</view>
+      <view>{{address.all}}</view>
+    </view>
+    <view class="address_row_right">
+      {{address.telNumber}}
+    </view>
+  </view>
+</view>
+<!-- 购物车内容 -->
+<view class="cart_content">
+  <view class="cart_title">购物车</view>
+  <view class="cart_main">
+    <block wx:if="{{goodsItem.length !== 0}}">
+      <view class="cart_item" wx:for="{{goodsItem}}" wx:key="goods_id">
+        <!-- 复选框 -->
+        <view class="cart_chk_wrap">
+          <checkbox-group bindchange="handeItemChange" data-id="{{item.goods_id}}">
+            <checkbox checked="{{item.checked}}"></checkbox>
+          </checkbox-group>
+        </view>
+        <!-- 商品图片 -->
+        <navigator class="cart_img_wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <!-- 商品信息 -->
+        <view class="cart_info_wrap">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price_wrap">
+            <view class="goods_price">￥{{item.goods_price}}</view>
+            <view class="cart_num_tool">
+              <view class="num_edit" bindtap="numEdit" data-num="{{-1}}" data-id="{{item.goods_id}}">-</view>
+              <view class="goods_num">{{item.num}}</view>
+              <view class="num_edit" bindtap="numEdit" data-num="{{1}}" data-id="{{item.goods_id}}">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <image class="koCart" mode="widthFix" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605626048571&di=423f601a559f45618b1ccaa7cece806b&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+      <view class="koText">空空如也~</view>
+    </block>
+  </view>
+  <!-- 底部工具栏 -->
+  <block wx:if="{{goodsItem.length !== 0}}">
+    <view class="footer_tool">
+      <!-- 全选 -->
+      <view class="all_chk_wrap">
+        <checkbox-group bindchange="handeAllChange">
+          <checkbox checked="{{allchecked}}"></checkbox>
+        </checkbox-group>
+        全选
+      </view>
+      <!-- 合计 -->
+      <view class="total_price_wrap">
+        合计: <text class="total_price_text">￥{{TotalPrice}}</text>
+        <view>包含运费</view>
+      </view>
+      <!-- 结算 -->
+      <view class="order_pay_wrap" bindtap="handlePay">
+        结算({{TotalNum}})
+      </view>
+    </view>
+  </block>
+</view>

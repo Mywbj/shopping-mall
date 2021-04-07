@@ -1,0 +1,5 @@
+<view class="auth_content">
+  <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetuserinfo">
+    获取授权
+  </button>
+</view>
